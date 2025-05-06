@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Página Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #00c16e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+    }
+    .coord-section {
+      text-align: center;
+    }
+    .coord-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    .coord {
+      width: 90%;
+      max-width: 300px;
+    }
+    .coord img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .coord button {
+      margin-top: 10px;
+      background: #00c16e;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .coord button:hover {
+      opacity: 0.9;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+      .coord-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HEY AIESEC!, ¿Están Listos?</h1>
+  </header>
+
+  <main>
+    <h2>Nuestro programa: Incoming Global Voluneteer</h2>
+    <p>Es uno de los programas de AIESEC enfocado en recibir voluntarios internacionales en el país. A través de este programa, jóvenes de todo el mundo llegan para participar en proyectos sociales alineados con los Objetivos de Desarrollo Sostenible (ODS) de la ONU.</p>
+    
+    <button onclick="mostrarAlerta()">Haz clic aquí</button>
+
+    <hr />
+
+    <h2 class="coord-section">Conoce nuestras coordinaciones</h2>
+    <div class="coord-grid">
+      <div class="coord">
+        <img src="Img_Area/sales.jpg" alt="SALES">
+        <button onclick="alert('Conoce más sobre SALES')">SALES</button>
+      </div>
+      <div class="coord">
+        <img src="Img_Area/experience.jpg" alt="EXPERIENCE">
+        <button onclick="alert('Conoce más sobre EXPERIENCE')">EXPERIENCE</button>
+      </div>
+      <div class="coord">
+        <img src="Img_Area/ir.jpg" alt="INTERNATIONAL RELATIONSHIPS">
+        <button onclick="alert('Conoce más sobre INTERNATIONAL RELATIONSHIPS')">INTERNATIONAL RELATIONSHIPS</button>
+      </div>
+      <div class="coord">
+        <img src="Img_Area/global_home.jpg" alt="GLOBAL HOME">
+        <button onclick="alert('Conoce más sobre GLOBAL HOME')">GLOBAL HOME</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Incoming Global Volunteer. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrarAlerta() {
+      alert("¡Gracias por visitarnos!");
+    }
+  </script>
+  
+</body>
+</html>
